@@ -29,11 +29,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-    jobs:  
-- deployment: VMDeploy
-  displayName: web
-  environment:
-    name:  Tomcat server
-    resourceType: VirtualMachine
-    tags: web1
-  strategy:
