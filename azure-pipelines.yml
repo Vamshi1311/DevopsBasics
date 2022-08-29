@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 variables:
   # EnvironmentName
-  environmentName: 'test'
+  environment: 'test'
 steps:
 - task: Maven@3
   inputs:
