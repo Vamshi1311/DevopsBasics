@@ -8,9 +8,6 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-variables:
-  # EnvironmentName
-  environment: 'test'
 steps:
 - task: Maven@3
   inputs:
