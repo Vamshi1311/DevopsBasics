@@ -29,7 +29,7 @@ steps:
     ArtifactName: 'drop'
 - task: AzureFileCopy@4
   inputs:
-    SourcePath: '*'
+    SourcePath: '$(Build.ArtifactStagingDirectory)'
     azureSubscription: 'Practise'
     Destination: 'AzureVMs'
     resourceGroup: 'AZURE-TOMCAT'
