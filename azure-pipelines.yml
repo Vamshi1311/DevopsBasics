@@ -27,12 +27,3 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
-- task: AzureFileCopy@4
-  inputs:
-    SourcePath: '$(Build.ArtifactStagingDirectory)'
-    azureSubscription: 'Practise'
-    Destination: 'AzureVMs'
-    resourceGroup: 'AZURE-TOMCAT'
-    vmsAdminUserName: 'Azure-test'
-    vmsAdminPassword: 'Vamshi@12345'
-    TargetPath: '/home/Azure-test/apache-tomcat-9.0.65/webapps'
